@@ -1,0 +1,26 @@
+<?php
+
+/** @var array $buch_arr */
+$buch_arr;
+
+?>
+<table border="1">
+    <tr>
+        <th>Code</th>
+        <th>Fullname</th>
+        <th>Work</th>
+        <th>Zp</th>
+        <th>Kids</th>
+        <th>Age</th>
+    </tr>
+    <?php foreach ($buch_arr as $buch): ?>
+    <tr>
+        <td><?= $buch['code']; ?></td>
+        <td><?= $buch['fullname']; ?></td>
+        <td><?= $buch['work']; ?></td>
+        <td><?= $buch['zp']; ?></td>
+        <td><?= $buch['kids']; ?></td>
+        <td><?= $buch['age']; ?></td>
+    </tr>
+    <?php endforeach; ?>
+</table>
